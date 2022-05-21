@@ -1,0 +1,234 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    font-weight: 300;
+    height: 100vh;
+}
+.logo{
+    margin-bottom: 45px;
+}
+.logo img{
+    display: block;
+    width: 250px;
+    margin: auto;
+}
+form{
+    padding-bottom: 1rem;  
+}
+.signin{
+    width:70%;
+}
+input{
+    margin-bottom: 1.3rem;
+    background-color: black;
+    border: 1.1px solid rgb(110, 110, 110);
+    line-height: .7rem;
+    border-radius: 3px;
+    padding: .5rem .9rem;
+    width: 100%;
+    color:lavender;
+}
+
+.btn{
+    display: block;
+    background-color: orangered;
+    color: white;
+    font-weight: 500;
+    border: 0;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 3px;
+    line-height: 2.1rem; 
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.btn:hover{
+    background-color: rgb(252, 116, 63);
+}
+
+.link a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5rem;
+    
+}
+
+.width{
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+    width: 60%;
+}
+
+.or{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    font-size: .9rem;
+}
+
+.or hr{
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+}
+
+.or span{
+    color: white;
+    padding: 0 .4rem;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.btn2{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    border: 1.2px solid rgb(245, 241, 240);
+    width: 100%;
+    font-size: 15px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 2.1rem; 
+    margin-bottom: 1.5rem;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.btn2:hover{
+    border-color: rgb(245, 81, 16);
+    color: rgb(245, 81, 16);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright{
+    color: rgb(230, 215, 215);
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.term{
+    text-decoration: none;
+    color: tomato;
+    font-size: 13px;
+}
+
+.endline{
+    color: rgb(224, 218, 218);
+    margin-top: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.rightside{
+    flex: 1;
+}
+
+.back-image{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('https://image.ibb.co/cO9Lxq/login-bg.jpg') no-repeat center center / cover;
+    
+}
+
+.text{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.trial{
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+@media (min-width: 1200px) {
+    .leftside {
+        flex: 4;
+      }
+    
+    .rightside {
+        flex: 6;
+      }
+    
+}
+
+@media (max-width: 1100px) {
+    .text{
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .leftside{
+        justify-content: start;
+    }
+
+    .rightside{
+        display: none;
+    }
+
+    body{
+        overflow: auto;
+    }
+    .logo img{
+        margin-top: 50px;
+    }
+    
+}
+
+@media (max-width:300px) {
+    .text{
+        font-size: .5rem;
+    }
+    
+}
